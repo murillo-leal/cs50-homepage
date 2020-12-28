@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
+
 .intro{
     margin-left: 1.8rem;
 }
@@ -18,4 +20,8 @@ body {
 
 .shadowed{
     box-shadow: 2px 2px 25px #eee;
+}
+
+h1,h2,h3,h4,h5,h6, .navbar-brand{
+    font-family: 'Inconsolata', monospace;
 }
