@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Git tutorial - MLEAL</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">GitTutorial</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="top-bar" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Introdução </a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Conceitos<span class="sr-only">(select)</span></a>
+                </li>               
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Extras</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">GitHub & OpenSource</a>
+                </li>
+              </ul>            
+            </div>
+          </nav>
+
+          <div class="intro">
+            <h1>Repositório</h1>
+            <p>O Git trabalha com unidades chamadas de <en>Repositórios</en>. Que é uma pasta de arquivos basicamente
+            O Repositório contém duas peças principais: A versão do Repositório e a sua cópia em andamento.</p>
+                
+            <p>A cópia em andamento consiste em arquivos normais organizados em estuturas de diretório. E a versão do Repositório armazena suas versões anteriores.
+             Podemos considerar dessa forma:   
+            </p>
+            <img src="imgs/Git006.png" alt="repositorio vs copia">            
+
+            <h1>Commits</h1>            
+            <p>Digamos que você tenha alterado a sua cópia em andamento. O Git não faz o track automático de cada alteração. O comando 'git commit -a' tira uma "foto" do seu diretório atual e salva no repositorio de versão.</p>
+
+            <en><span>O flag <code>-a</code> significa "Comite todas as alterações no diretorio em andamento"</span></en>
+
+            <p>Junto com o Commit você deve adicionar uma mensagem explicativa sobre as alterações que estão sendo feitas:</p>
+            
+            <img src="imgs/Git010.png" alt="Commit">            
+
+            <pre>git commit -a "criando a pagina de conceitos"</pre>
+
+            <h1>Push</h1>
+            <p>Após ter commitado suas alterações, chegou a hora de copiar seu repositório de versões para um repositório remoto.
+                No nosso caso, estamos usando o GitHub. Para isso basta executar o comando <code>git push</code>
+            </p>
+            <h2>Configurando um Repositório pela primeira vez</h2>
+            <p>Caso esteja configurando um repositório pela primeira vez, você deve adicionar o repositório remoto.</p>
+            <pre>
+                git remote add origin git@github.com:user/repositorio
+                git push -u origin master
+            </pre>
+
+            <p>Pronto! Seu repositório está configurado, nas próximas vezes, basta utilizar o <code>git push</code></p>
+
+            <h1>Pull</h1>    
+            <p>Caso esteja trabalhando em mais de um dispositivo, ou trabalhando em equipe, você deve sempre manter seu repositório atualizado.
+                Para isso, faça <code>git pull</code> regularmente
+            </p>    
+          </div>
+    </body>
+</html>
