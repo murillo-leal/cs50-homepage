@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Git tutorial - MLEAL</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">GitTutorial</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="top-bar" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Introdução </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="conceitos.html">Conceitos</a>
+                </li>               
+                <li class="nav-item active">
+                  <a class="nav-link disabled" href="#">Extras<span class="sr-only">(select)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">GitHub & OpenSource</a>
+                </li>
+              </ul>            
+            </div>
+          </nav>
+
+          <div class="intro">
+            <h1>Git Cheatsheet - Tabela de comandos mais utilizados</h1>
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Comando</th>
+                        <th>Descrição</th>
+                    </tr>
+                </thead>        
+                <tbody>
+                    <tr>
+                        <td><code>git init&lt;directory></code></td>
+                        <td>Cria repositório vazio</td>
+                    </tr>
+                    <tr>
+                        <td><code>git clone &lt;repo></code></td>
+                        <td>Clona (copia) repositório</td>
+                    </tr>
+                    <tr>
+                        <td><code>git add &lt;directory></code></td>
+                        <td>Adiciona arquivos para o commit</td>
+                    </tr>
+                    <tr>
+                        <td><code>git commit -m "&lt;message>"</code></td>
+                        <td>Persiste as alterações no repositório de versão</td>
+                    </tr>
+                    <tr>
+                        <td><code>git log "&lt;message>"</code></td>
+                        <td>Exibe um histórico de commits</td>
+                    </tr>
+                    <tr>
+                        <td><code>git diff"&lt;message>"</code></td>
+                        <td>Exibe um comparativo de arquivos que estão/foram alterados</td>
+                    </tr>
+                    <tr>
+                        <td><code>git branch"&lt;message>"</code></td>
+                        <td>Lista todas as branches.</td>
+                    </tr>
+                    <tr>
+                        <td><code>git checkout -b &lt;branch></code></td>
+                        <td>Cria uma nova branch com nome desejado</td>
+                    </tr>
+                    <tr>
+                        <td><code>git merge -b &lt;branch></code></td>
+                        <td>Faz um merge para a branch desejada</td>
+                    </tr>
+                    <tr>
+                        <td><code>git pull</code></td>
+                        <td>Pega as alterações que estão no repositório remoto </td>
+                    </tr>
+                    <tr>
+                        <td><code>git push</code></td>
+                        <td>Envia as alterações comittadas</td>
+                    </tr>
+                </tbody>        
+            </table>
+            <p><en >Mais comandos:
+                <a href="https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet" target="_blank">Cheatsheet</a>
+            </en></p>
+            <h1>Git no VSCode</h1>
+            <p>
+                Apesar do git te dar uma gama de comandos suficientes para manusear o repositório, você pode utilizar de ferramentas gráficas para realizar as alterações e entender melhor.
+            </p>
+            <h2>Painel de controle de Versionamento</h2>
+            
+            <p>No VSCode você vai encontrar a aba "Source Control" no botão:</p>
+            <img src="imgs/botaogit.PNG" alt="botao git">
+            
+            <p>E ao clicar no botão , você pode visualizar as alterações e realizar todas as ações vistas acima(Commit, push e pull)</p>
+            <img src="imgs/Painel.png" alt="painel" class="img-fluid">
+            
+            <h2>GitLens</h2>
+            O GitLens é um Plugin do VSCode bem útil que facilita a visualização de alterações ou responsáveis por elas no seus arquivos.
+            <img src="imgs/gitlens.png" alt="painel" class="img-fluid">
+            
+            <p>Você pode baixar o GitLens <a href="https://github.com/eamodio/vscode-gitlens.git" target="_blank">Aqui</a> ou pelo marketplace do VSCode.</p>
+          </div>
+    </body>
+</html>
